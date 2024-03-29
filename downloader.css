@@ -1,0 +1,161 @@
+ *{
+    margin: 0 ;padding: 0;
+ }
+ body{
+    background-color: black;
+ }
+ nav{
+    width: 100vw;
+    height: 30px;
+    padding: 0px;
+    background-color: #0C0032;
+    scroll-snap-align: none;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    
+ }
+ 
+ .logo{
+   font-size: 20px;
+   margin: auto auto;
+   color: white;
+   font-family: "Poppins";
+ }
+ .bdy{
+   background-color: #3500D3;
+   width: 95vmin;
+   height: auto;
+   margin: 20px auto;
+   border-radius: 20px;
+   box-shadow: 5px 5px 26px #707070;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .titl{
+   font-size: 42px;
+   color: white;
+   text-align: center;
+   margin: 25px auto;
+   font-family: "Poppins";
+
+   
+ }
+ #posturl{
+   margin: 25px auto;
+   width: 65vmin;
+   height: 30px;
+   background-color: #f7f4f4;
+   color: black;
+   text-align: center;
+   border-radius: 40px;
+   font-size: 15px;
+   border: none;
+   font-size: "Baloo bhai 2";
+ }
+ #downlink{
+   margin: 20px auto;
+   background-color: #0c0032;
+   color: white;
+   width:40vmin;
+   height: 33px;
+   border-radius: 7px;
+   display: grid;
+   place-items: center;
+   font-family: "Poppins";
+   font-size: 15px;
+ }
+ #content{
+width:60vmin;
+height: auto;
+
+overflow: hidden;
+margin: 30px auto;
+background-color: #c9c5c5;
+border: 2px solid black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+ }
+ #final{
+   margin: 20px 20px;
+   
+   max-width: 90%;
+   height: auto;
+   border: 2px solid black;
+ }
+ #finaldown{
+   width: 150px;
+   height: 35px;
+   background-color: #240090;
+   border: none;
+   color: white;
+   border-radius: 8px;
+   margin: 15px auto;
+   display: grid;
+   place-items: center;
+   font-size: 15px;
+   box-shadow: 4px 4px 7px black;
+ }
+ 
+ .about{
+  color: white;
+
+position: relative;
+  width: 100vw;
+  bottom: 0px;
+  margin-top: 30px;
+  background-color: #0C0032;
+  padding: 10px 0px;
+  margin-bottom: 0px;
+  font-family: "Poppins";
+ }
+ h4{
+  margin: 20px auto;
+  font-size: 28px;
+  text-align: center;
+
+ }
+ h5{
+  margin: 10px 20px;
+  color: #e318f9;
+ }
+ p{
+  margin: 10px 22px;
+  width: 89%;
+  font-family: "Roboto";
+ }
+ @media only screen and (max-width:450px){
+  body{
+    background-color: #3500D3;
+  }
+  .bdy{
+    box-shadow: none;
+  }
+  .titl{
+    font-size: 34px;
+  }
+  #posturl{
+    width: 90vmin;
+    border-radius: 6px;
+
+  }
+  #content{
+
+    width: 82vmin;
+  }
+  #finaldown{
+    height: 25px;
+    width:120px ;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  h4{
+    font-size: 20px;
+  }
+ }
