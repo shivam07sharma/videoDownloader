@@ -30,14 +30,15 @@ btn.addEventListener("click", async () => {
     document.querySelector("#downlink").style.display = "none";
     const link = document.getElementById("posturl").value;
     console.log(link);
-    const result = await getpost(link);
+   const result = await getpost(link);
     if (result) {
         next(result);
     }
 });
 
 function next(result) {
-    document.querySelector("#content").style.display = "flex";
+    document.querySelector("#content").style.display = "grid";
+    document.querySelector(".about").style.position="relative";
     document.querySelector(".video").innerHTML = `<video controls autoplay id="final" src="${result.medias[0].url}">Video</video>`;
 
 }
