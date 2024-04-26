@@ -20,14 +20,17 @@ async function getpost(limk) {
         return result;
     } catch (error) {
         console.error('Error fetching data:', error);
-        document.querySelector(".titl").innerHTML="Invalid URL";
+        document.querySelector(".titl").innerHTML="Invalid URL!";
+        document.querySelector(".titl").style.color="red";
         return null;
     }
 }
 
 const btn = document.getElementById("downlink");
+
 btn.addEventListener("click", async () => {
     document.querySelector("#downlink").style.display = "none";
+    document.querySelector(".load").style.display = "flex";
     const link = document.getElementById("posturl").value;
     console.log(link);
    const result = await getpost(link);
@@ -37,6 +40,7 @@ btn.addEventListener("click", async () => {
 });
 
 function next(result) {
+    document.querySelector(".load").style.display = "none";
     document.querySelector("#content").style.display = "grid";
     document.querySelector(".about").style.position="relative";
     document.querySelector(".video").innerHTML = `<video controls autoplay id="final" src="${result.medias[0].url}">Video</video>`;

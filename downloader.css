@@ -12,11 +12,12 @@
     scroll-snap-align: none;
     display: flex;
     justify-content: space-between;
-    top: 0;
+   
     position: sticky;
-    
+     top: 0;
  }
  
+
  .logo{
    font-size: 16px;
    margin: auto auto;
@@ -131,6 +132,31 @@ overflow: hidden;
   width: 89%;
   font-family: "Roboto";
  }
+
+ .load{
+  display: none;
+  width: 13vmin;
+  height:13vmin;
+margin: 29px auto;
+ }
+ .loading{
+width: 80%;
+height: 80%;
+border:8px solid black;
+border-radius:100% ;
+border-top: 8px solid gray;
+animation: rotet 0.8s infinite;
+background-color: #0c003200;
+ }
+ @keyframes rotet {
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+ }
+
  @media only screen and (max-width:450px){
   body{
     background-color: #3500D3;
@@ -164,4 +190,9 @@ overflow: hidden;
   .about{
     position: relative;
   }
+  .load{
+    width: 24vmin;
+    height: 24vmin;
+  }
  }
+ 
